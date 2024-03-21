@@ -1,0 +1,11 @@
+Steps to setup prisma in your setup
+1.) make local or cloud db and get that link. You can use either mysql or postgresql, for cloud you can go to neon.tech and get your link.
+e.g  = mailto:postgresql://bagaiakshay26:4iaiohhpdyc7@ep-rapid-shape-81444347.us-west-2.aws.neon.tech/prisma?sslmode=require
+2.) make .env file in root and add that db url named " DATABASE_URL ".
+e.g = mailto:database_url="postgresql://bagaiakshay26:4iaiohhpdyc7@ep-rapid-shape-81444347.us-west-2.aws.neon.tech/prisma?sslmode=require"
+3.) then run these commands 
+a.) npx prisma generate
+b.) npx prisma db push
+this will generate tables in your db
+4.) for verification you can hit post request at this url after running npm run dev :- http://localhost:3001/api/addusers
+5.) and then this url to check whether your user is added or not :- http://localhost:3001/api/getusers
