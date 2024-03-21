@@ -1,0 +1,8 @@
+git status
+git add .
+git commit -am "changes"
+git remote add upstream https://github.com/Akshaybagai52/baseline-rebuild.git
+git fetch upstream
+git merge upstream/main
+git pull origin pradeep
+git push origin pradeep
