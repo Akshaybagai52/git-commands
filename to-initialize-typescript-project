@@ -3,6 +3,12 @@ cd node-app
 npm init -y
 npx tsc --init
 
+Go to tsconfig.json file and uncomment outdir and put './dist' and in rootdir put './src' like below 
+`
+"outDir": "./dist",
+"rootDir": "./src",    
+`
+
 Make a .ts file and write ts code in it. After writing ts code then run this:
 tsc -b
 
