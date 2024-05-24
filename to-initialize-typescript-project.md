@@ -3,7 +3,7 @@
 Follow these steps to set up a new TypeScript Node.js project.
 
 ## 1. Create a New Directory
-```bash
+
 mkdir node-app
 cd node-app
 
