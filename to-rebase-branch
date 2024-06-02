@@ -1,0 +1,17 @@
+# Fetch all branches from upstream
+git fetch upstream
+
+# Ensure you are on your feature branch
+git checkout your-feature-branch
+
+# Rebase your feature branch onto the target branch from upstream
+git rebase upstream/web-release-newsletter
+
+# If conflicts arise, resolve them
+git status  # Check which files have conflicts
+# Edit the conflicted files to resolve conflicts
+git add <resolved-files>  # Mark conflicts as resolved
+git rebase --continue -m "Resolved conflicts during rebase"
+
+# Push the updated branch to your origin repository
+git push --force-with-lease origin your-feature-branch
